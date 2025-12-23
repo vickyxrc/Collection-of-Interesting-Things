@@ -18,15 +18,20 @@ header h1 {
 
 .subtitle {
   font-style: italic;
+  margin-bottom: 1.25rem;
 }
 
-/* cards */
+.instruction {
+    margin-left: 4.1rem;
+    margin-bottom: 0.3rem;
+}
+/* cards section*/
 .card-grid {
   display: grid;
   /* min = min grid width */
   grid-template-columns: repeat(auto-fit, 270px);
   justify-content: center;
-  margin: 2rem auto;
+  margin: auto;
   gap: 1.5rem;
   max-width: 1160px;
 }
@@ -35,4 +40,22 @@ header h1 {
     text-align: center;
     min-height: 225px;
     box-sizing: border-box;
+    border-radius: 5px;
 }
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* card contents */
+.card-content h3 {
+    margin-top: 2px;
+}
+.card-content img {
+    width:70%;
+    height:150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
