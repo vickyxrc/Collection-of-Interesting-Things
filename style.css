@@ -13,49 +13,83 @@ header {
 /* page title */
 header h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .subtitle {
   font-style: italic;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.8rem;
 }
 
 .instruction {
-    margin-left: 4.1rem;
-    margin-bottom: 0.3rem;
+  margin-left: 3rem;
+  margin-bottom: 0.1rem;
+  font-size: small;
+  font-style: italic;
 }
 /* cards section*/
 .card-grid {
   display: grid;
-  /* min = min grid width */
-  grid-template-columns: repeat(auto-fit, 270px);
+  grid-template-columns: repeat(auto-fit, 250px); /* width */
   justify-content: center;
   margin: auto;
   gap: 1.5rem;
   max-width: 1160px;
 }
 .card {
-    border: 2px solid black;
-    text-align: center;
-    min-height: 225px;
-    box-sizing: border-box;
-    border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+  min-height: 200px; /* height */
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .card a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* card contents */
 .card-content h3 {
-    margin-top: 2px;
-}
-.card-content img {
-    width:70%;
-    height:150px;
-    object-fit: cover;
-    border-radius: 5px;
+  margin-top: 2px;
 }
 
+.card-content img {
+  width: 70%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*birthday paradox page*/
+.birthday-simulator {
+  margin: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.birthday-simulator .screen {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 32rem;
+  height: 32rem;
+  border: 2px solid black;
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  font-size: small;
+  align-items: center;
+}
+
+.person {
+    font-size: 1.5rem;
+}
+
+.sidebar {
+    background-color: aquamarine;
+    width: 100px;
+}
