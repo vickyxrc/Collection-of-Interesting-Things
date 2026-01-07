@@ -21,6 +21,12 @@ header h1 {
   margin-bottom: 0.8rem;
 }
 
+body {
+  background-color: #1b1c1b;
+  color: #FAFAFA;
+  opacity: 0.87;
+}
+
 .instruction {
   margin-left: 3rem;
   margin-bottom: 0.1rem;
@@ -37,11 +43,12 @@ header h1 {
   max-width: 1160px;
 }
 .card {
-  border: 2px solid black;
+  border: 1.5px solid #FAFAFA;
   text-align: center;
   min-height: 200px; /* height */
   box-sizing: border-box;
   border-radius: 5px;
+  background-color: #1b1c1b;
 }
 
 .card a {
@@ -63,9 +70,10 @@ header h1 {
 
 /*birthday paradox page*/
 .birthday-simulator {
-  margin: 2rem 4rem;
+  margin: 1.5rem 4rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .birthday-simulator .screen {
@@ -73,23 +81,96 @@ header h1 {
   grid-template-columns: repeat(10, 1fr);
   width: 32rem;
   height: 32rem;
-  border: 2px solid black;
+  border: 2px solid #FAFAFA;
+  background-color: #2b2c2b;
 }
 
 .cell {
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   font-size: small;
   align-items: center;
+  justify-content: center;
+  min-height: 3.2rem;
 }
 
-.person {
-    font-size: 1.5rem;
+.cell.match {
+  background-color: #ffeb3b;
+  border: 2px solid #ffc107;
+  color: black;
 }
 
 .sidebar {
-    background-color: aquamarine;
-    width: 100px;
+  width: 16rem;
+  border: 2px solid #FAFAFA;
+  border-left-style: none;
+  padding: 1rem 0.5rem;
+  background-color: #191c27;
+}
+
+.person {
+  font-size: 1.5rem;
+}
+
+.slider-container {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#slider {
+  width: 14rem;
+}
+
+.slider-value {
+  position: absolute;
+  top: 5px;
+  transform: translateX(-50%);
+  background: grey;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none;
+  width: fit-content;
+}
+
+.slider-labels {
+  position: absolute;
+  bottom: 0;
+  width: 14rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+}
+
+.generate-bttn {
+  font-size: small;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.page-title {
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  margin: 0 1.5rem;
+}
+
+h2 {
+  margin: 1.5rem 1.5rem 0;
+  font-size: large;
 }

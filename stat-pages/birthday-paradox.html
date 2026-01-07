@@ -11,18 +11,41 @@
       <h1>Birthday Paradox</h1>
     </header>
     <main>
-      <p>
+      <p class="paragraph">
         Think of a random group of 23 people — maybe in classroom, a work
         meeting, or a party. Now guess: What do you think the chances are that 2
-        individuals share the same birthday?
+        individuals share the same birthday? <br />
         <br />If you'd imagine the probabilities to be pretty low — say 10%,
-        20%, or even less — <strong>you'd be wrong.</strong> <br />The answer is
-        over 50%.
+        20%, or even less — <strong>you'd be wrong.</strong> <br />
+        In fact, if you guessed anything under 50%, you are wrong. <br />
+        <br /> Welcome to <strong>The Birthday Paradox</strong>
+      </p>
+      <h2>Try It Yourself!</h2>
+      <p class="paragraph">
+        Use the slider to choose how many people to generate, then hit the
+        button. Their birthdays are randomly generated dates in a nonleap year.
+        Watch as matching birthdays light up in yellow. The odds might
+        surprise you!
       </p>
       <section class="birthday-simulator">
         <section class="screen" id="screen"></section>
         <aside class="sidebar">
-          <label> People: <span id="numPeople">23</span> </label>
+          <label> People: <span id="num-people">2</span> </label>
+          <div class="slider-container">
+            <div class="slider-value" id="slider-value">2</div>
+            <input type="range" min="2" max="100" value="2" id="slider" />
+            <div class="slider-labels">
+              <span>2</span>
+              <span>100</span>
+            </div>
+          </div>
+          <button id="generate-bttn" class="generate-bttn">Generate</button>
+          <label class="label"
+            >Match Occured: <span id="match-occured"></span
+          ></label>
+          <label class="label"
+            >Expected Chance of a Match: <span id="chance"></span
+          ></label>
         </aside>
       </section>
     </main>
