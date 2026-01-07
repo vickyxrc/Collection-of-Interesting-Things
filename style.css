@@ -21,8 +21,8 @@ header h1 {
   margin-bottom: 0.8rem;
 }
 
-main {
-  max-width: 1160px;
+.wrapper {
+  width: 1160px;  
   margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .instruction {
-  margin-left: 3rem;
+  margin-left: 2.85rem;
   margin-bottom: 0.1rem;
   font-size: small;
   font-style: italic;
