@@ -22,7 +22,7 @@ header h1 {
 }
 
 .wrapper {
-  width: 1160px;  
+  width: 90%;          /* scales with the viewport */
   margin: 0 auto;
 }
 
@@ -83,8 +83,10 @@ body {
 .birthday-simulator .screen {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 32rem;
-  height: 32rem;
+  width: 90%;
+  max-width: 32rem;
+  height: auto;
+  aspect-ratio: 1 / 1; /* keeps it square */
   border: 2px solid #FAFAFA;
   background-color: #2b2c2b;
 }
