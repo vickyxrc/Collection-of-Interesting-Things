@@ -21,6 +21,11 @@ header h1 {
   margin-bottom: 0.8rem;
 }
 
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 body {
   background-color: #1b1c1b;
   color: #FAFAFA;
@@ -42,6 +47,7 @@ body {
   gap: 1.5rem;
   max-width: 1160px;
 }
+
 .card {
   border: 1.5px solid #FAFAFA;
   text-align: center;
