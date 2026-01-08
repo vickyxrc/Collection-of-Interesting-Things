@@ -12,18 +12,14 @@ header {
 
 /* page title */
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.15rem;
 }
 
 .subtitle {
   font-style: italic;
-  margin-bottom: 0.8rem;
-}
-
-.wrapper {
-  width: 90%;          /* scales with the viewport */
-  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 body {
@@ -33,23 +29,25 @@ body {
 }
 
 .instruction {
-  margin-left: 2.85rem;
+  margin-left: 3rem;
   margin-bottom: 0.1rem;
-  font-size: small;
+  font-size: 1rem;
   font-style: italic;
 }
 /* cards section*/
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-columns: repeat(auto-fit, 280px); /* width */
   justify-content: center;
+  margin: auto;
   gap: 1.5rem;
+  max-width: 1192px;
 }
 
 .card {
   border: 1.5px solid #FAFAFA;
   text-align: center;
-  min-height: 200px; /* height */
+  min-height: 224px; /* height */
   box-sizing: border-box;
   border-radius: 5px;
   background-color: #1b1c1b;
@@ -83,10 +81,8 @@ body {
 .birthday-simulator .screen {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 90%;
-  max-width: 32rem;
-  height: auto;
-  aspect-ratio: 1 / 1; /* keeps it square */
+  width: 36rem;
+  height: 36rem;
   border: 2px solid #FAFAFA;
   background-color: #2b2c2b;
 }
@@ -95,7 +91,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-size: small;
+  font-size: 15px;
   align-items: center;
   justify-content: center;
   min-height: 3.2rem;
@@ -108,15 +104,16 @@ body {
 }
 
 .sidebar {
-  width: 16rem;
+  width: 18.2rem;
   border: 2px solid #FAFAFA;
   border-left-style: none;
   padding: 1rem 0.5rem;
   background-color: #191c27;
+  font-size: large;
 }
 
 .person {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .slider-container {
@@ -130,7 +127,7 @@ body {
 }
 
 #slider {
-  width: 14rem;
+  width: 16.5rem;
 }
 
 .slider-value {
@@ -150,14 +147,14 @@ body {
 .slider-labels {
   position: absolute;
   bottom: 0;
-  width: 14rem;
+  width: 16.5rem;
   display: flex;
   justify-content: space-between;
-  font-size: small;
+  font-size: 15px;
 }
 
 .generate-bttn {
-  font-size: small;
+  font-size: 1rem;
   display: block;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -174,9 +171,15 @@ body {
 
 .paragraph {
   margin: 0 1.5rem;
+  font-size: large;
 }
 
 h2 {
   margin: 1.5rem 1.5rem 0;
-  font-size: large;
+  font-size: larger;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
